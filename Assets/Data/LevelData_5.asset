@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7102976b8a8b104db6bc7d267c0c1d1, type: 3}
+  m_Name: LevelData_5
+  m_EditorClassIdentifier: 
+  obstacles:
+  - prefab: {fileID: 4356730162324896800, guid: 2fc4760d9885d484b851d871baa89d20, type: 3}
+    initialPosition: {x: 2, y: 5}
+    stackHealth: 3
+    color: {r: 0, g: 0.15093274, b: 0.9811321, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: 2fc4760d9885d484b851d871baa89d20, type: 3}
+    initialPosition: {x: -2.2, y: 4.7}
+    stackHealth: 4
+    color: {r: 0.06978583, g: 1, b: 0, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: 2fc4760d9885d484b851d871baa89d20, type: 3}
+    initialPosition: {x: 0, y: 11}
+    stackHealth: 7
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: 2fc4760d9885d484b851d871baa89d20, type: 3}
+    initialPosition: {x: -2, y: 16}
+    stackHealth: 2
+    color: {r: 0.99215686, g: 0.5350356, b: 0, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: 2fc4760d9885d484b851d871baa89d20, type: 3}
+    initialPosition: {x: -1, y: 14}
+    stackHealth: 9
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: d45de2a82b1292e479b2f8047263d2b0, type: 3}
+    initialPosition: {x: 2.3, y: 10}
+    stackHealth: 10
+    color: {r: 0.9618101, g: 0.9811321, b: 0.48593804, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: 5823c52f7705daf45ab5fbe0f51095f9, type: 3}
+    initialPosition: {x: 2.3, y: 2}
+    stackHealth: 10
+    color: {r: 0.10969208, g: 0.8018868, b: 0.8018868, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: 5823c52f7705daf45ab5fbe0f51095f9, type: 3}
+    initialPosition: {x: -1.1, y: 2}
+    stackHealth: 10
+    color: {r: 0.98039216, g: 0.4862745, b: 0.52530223, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: 5823c52f7705daf45ab5fbe0f51095f9, type: 3}
+    initialPosition: {x: 0, y: 3.7}
+    stackHealth: 10
+    color: {r: 0.7372549, g: 0.086274505, b: 0.27475768, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: d45de2a82b1292e479b2f8047263d2b0, type: 3}
+    initialPosition: {x: 0, y: 16}
+    stackHealth: 10
+    color: {r: 0.086274505, g: 0.59506696, b: 0.7372549, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: d45de2a82b1292e479b2f8047263d2b0, type: 3}
+    initialPosition: {x: 0, y: 17}
+    stackHealth: 10
+    color: {r: 0.086274505, g: 0.53626585, b: 0.7372549, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: d45de2a82b1292e479b2f8047263d2b0, type: 3}
+    initialPosition: {x: 0, y: 18}
+    stackHealth: 10
+    color: {r: 0.086274505, g: 0.50071687, b: 0.7372549, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: 5823c52f7705daf45ab5fbe0f51095f9, type: 3}
+    initialPosition: {x: 0, y: 3.7}
+    stackHealth: 10
+    color: {r: 0.7372549, g: 0.086274505, b: 0.27475768, a: 1}
+  - prefab: {fileID: 4356730162324896800, guid: 5823c52f7705daf45ab5fbe0f51095f9, type: 3}
+    initialPosition: {x: 0, y: 3.7}
+    stackHealth: 10
+    color: {r: 0.7372549, g: 0.086274505, b: 0.27475768, a: 1}
+  levelDistance: 19
