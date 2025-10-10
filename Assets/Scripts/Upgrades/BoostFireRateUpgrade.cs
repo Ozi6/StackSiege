@@ -1,20 +1,48 @@
+using System;
+using UnityEngine;
+
 public class BoostFireRateUpgrade : IUpgrade
 {
-    private string attackName;
-    private int attackIndex;
-    private float multiplier = 1.5f;
+    private readonly int _attackIndex;
+    private readonly string _attackName;
+    private readonly Type _attackType;
 
-    public BoostFireRateUpgrade(int index, string name)
+    public BoostFireRateUpgrade(int attackIndex, string attackName)
     {
-        attackIndex = index;
-        attackName = name;
+        _attackIndex = attackIndex;
+        _attackName = attackName;
+        _attackType = PlayerController.Instance.attacks[attackIndex].GetType();
     }
 
-    public string Name => $"Boost Fire Rate: {attackName}";
-    public string Description => $"Increases fire rate by {multiplier}x.";
+    public string Name => $"Faster {_attackName}";
+
+    public string Description => $"Increase {_attackName} fire rate by 20%";
+
+    public Sprite Icon
+    {
+        get
+        {
+            if (IconDatabase.Instance != null)
+                return IconDatabase.Instance.GetAttackIcon(_attackType.Name);
+            return null;
+        }
+    }
+
+    public Sprite BadgeIcon
+    {
+        get
+        {
+            if (IconDatabase.Instance != null)
+                return IconDatabase.Instance.GetFireRateBadge();
+            return null;
+        }
+    }
 
     public void Apply(PlayerController player)
     {
-        player.attacks[attackIndex].fireRate *= multiplier;
+        if (_attackIndex >= 0 && _attackIndex < player.attacks.Count)
+        {
+            player.attacks[_attackIndex].fireRate *= 1.2f;
+        }
     }
 }
