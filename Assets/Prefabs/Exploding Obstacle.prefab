@@ -218,7 +218,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.54, y: 0.54}
+    oldSize: {x: 0.81, y: 0.81}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -242,6 +242,8 @@ MonoBehaviour:
   hitParticles: {fileID: 4556785550767511794}
   shakeDuration: 0.2
   shakeMagnitude: 0.1
+  stackSprite: {fileID: 0}
+  damageableDistance: 10
   explosionRadius: 2
   explosionDamage: 2
   explosionParticles: {fileID: 9056783723309229725}
@@ -471,7 +473,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5362,7 +5364,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
