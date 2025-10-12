@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   afterImagePrefab: {fileID: 1280729057343881919, guid: 7c0711b1a79afa64c90aa4c83f28f066, type: 3}
-  poolSize: 30
+  poolSize: 15
 --- !u!1 &269188842
 GameObject:
   m_ObjectHideFlags: 0
